@@ -59,7 +59,7 @@ st.title("Glass Type Predictor")
 st.sidebar.title("Exploratory Data Analysis")
 if st.sidebar.checkbox("Show raw data"):
     st.subheader("Full Dataset")
-    st.DataFrame(glass_df)
+    st.write(glass_df)
 st.sidebar.subheader("Scatter Plot")
 features_list = st.sidebar.multiselect("Select the x-axis values:",
                                             ('RI', 'Na', 'Mg', 'Al', 'Si', 'K', 'Ca', 'Ba', 'Fe'))
