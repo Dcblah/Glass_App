@@ -57,7 +57,7 @@ def prediction(model, ri, na, mg, al, si, k, ca, ba, fe):
         return "headlamps".upper()
 st.title("Glass Type Predictor")
 st.sidebar.title("Exploratory Data Analysis")
-st.dataframe(glass_df)
+st.write(glass_df)
 if st.sidebar.checkbox("Show raw data"):
     st.write(glass_df.columns)
 st.sidebar.subheader("Scatter Plot")
