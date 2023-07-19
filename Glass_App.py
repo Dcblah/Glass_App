@@ -37,7 +37,7 @@ X = glass_df.iloc[:, :-1]
 y = glass_df['GlassType']
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.3, random_state = 42)
-@st.cache()
+@st.cache_data()
 def prediction(model, ri, na, mg, al, si, k, ca, ba, fe):
     glass_type = model.predict([[ri, na, mg, al, si, k, ca, ba, fe]])
     glass_type = glass_type[0]
