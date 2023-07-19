@@ -57,9 +57,8 @@ def prediction(model, ri, na, mg, al, si, k, ca, ba, fe):
         return "headlamps".upper()
 st.title("Glass Type Predictor")
 st.sidebar.title("Exploratory Data Analysis")
-st.write(glass_df)
 if st.sidebar.checkbox("Show raw data"):
-    st.write(glass_df.columns)
+    st.write(glass_df)
 st.sidebar.subheader("Scatter Plot")
 features_list = st.sidebar.multiselect("Select the x-axis values:",
                                             ('RI', 'Na', 'Mg', 'Al', 'Si', 'K', 'Ca', 'Ba', 'Fe'))
